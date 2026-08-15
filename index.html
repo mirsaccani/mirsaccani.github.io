@@ -1,1 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Mirsaccani — Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 22px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(11, 11, 11, 0.8);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 8% 80px;
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .eyebrow {
+      color: #888;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 10vw, 130px);
+      line-height: 0.9;
+      letter-spacing: -6px;
+      margin-bottom: 40px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #aaa;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 14px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 120px 8%;
+    }
+
+    .section-title {
+      font-size: 48px;
+      letter-spacing: -2px;
+      margin-bottom: 60px;
+    }
+
+    /* PORTFOLIO */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      aspect-ratio: 16 / 11;
+      background: #181818;
+      border-radius: 18px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: 0.4s;
+      overflow: hidden;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+      background: #222;
+    }
+
+    .project-number {
+      color: #666;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .project p {
+      color: #888;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 850px;
+    }
+
+    .about p {
+      font-size: 30px;
+      line-height: 1.3;
+      color: #ccc;
+    }
+
+    /* CONTACT */
+    .contact {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(50px, 8vw, 100px);
+      line-height: 0.95;
+      letter-spacing: -4px;
+      margin-bottom: 40px;
+    }
+
+    .email {
+      font-size: 22px;
+      color: #aaa;
+    }
+
+    .email:hover {
+      color: white;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 30px 8%;
+      border-top: 1px solid #222;
+      color: #666;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+
+      nav {
+        padding: 18px 5%;
+      }
+
+      .nav-links {
+        gap: 15px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 120px 6% 70px;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 80px 6%;
+      }
+
+      .section-title {
+        font-size: 38px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .about p {
+        font-size: 22px;
+      }
+
+      .contact h2 {
+        letter-spacing: -2px;
+      }
+
+      footer {
+        padding: 25px 6%;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">MIRSACCANI.</div>
+
+    <ul class="nav-links">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Portfolio
+        </div>
+
+        <h1>
+          Ciao,<br>
+          sono Mirsaccani.
+        </h1>
+
+        <p>
+          Qui puoi presentare chi sei, cosa fai e soprattutto
+          i progetti di cui vai più fiero.
+        </p>
+
+        <a class="button" href="#portfolio">
+          Guarda i miei lavori →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+
+      <h2 class="section-title">
+        Progetti
+      </h2>
+
+      <div class="projects">
+
+        <a href="#" class="project">
+          <div>
+            <div class="project-number">01</div>
+            <h3>Progetto Uno</h3>
+            <p>Descrizione del progetto</p>
+          </div>
+        </a>
+
+        <a href="#" class="project">
+          <div>
+            <div class="project-number">02</div>
+            <h3>Progetto Due</h3>
+            <p>Descrizione del progetto</p>
+          </div>
+        </a>
+
+        <a href="#" class="project">
+          <div>
+            <div class="project-number">03</div>
+            <h3>Progetto Tre</h3>
+            <p>Descrizione del progetto</p>
+          </div>
+        </a>
+
+        <a href="#" class="project">
+          <div>
+            <div class="project-number">04</div>
+            <h3>Progetto Quattro</h3>
+            <p>Descrizione del progetto</p>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+      <h2 class="section-title">
+        Chi sono
+      </h2>
+
+      <div class="about">
+
+        <p>
+          Scrivi qui una breve presentazione.
+          Puoi raccontare chi sei, cosa fai,
+          le tue competenze e cosa ti appassiona.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+      <h2>
+        Hai un<br>
+        progetto?
+      </h2>
+
+      <a class="email" href="mailto:tuamail@email.com">
+        tuamail@email.com
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>© 2026 Mirsaccani</span>
+    <span>Portfolio</span>
+  </footer>
+
+</body>
+</html>
