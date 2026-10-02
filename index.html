@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mirko Saccani's Portfolio">
+  <title>Mirko Saccani — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site">
+    <header class="header">
+        <div class="language-switcher" aria-label="Language selector">
+            <button class="language-button active" data-lang="it">IT</button>
+            <button class="language-button" data-lang="en">EN</button>
+            <button class="language-button" data-lang="fr">FR</button>
+        </div>
+      <div class="header-width">
+        <p class="header-text">PORTFOLIO</p>
+        <h1>Mirko Saccani</h1>
+        <p class="role" data-i18n="role.description">Game Programmer — Gameplay and UI</p>
+
+        <div class="intro">
+            <p data-i18n="intro.description">Una breve frase che descrive chi sei e cosa fai.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-menu" aria-label="Main menu">
+      <button class="menu-button active" data-section="projects" aria-selected="true">
+        <span class="menu-button-content">
+            <span class="menu-button-text" data-i18n="menu.projects">Projects</span>
+        </span>
+      </button>
+
+      <button class="menu-button" data-section="skills" aria-selected="false">
+        <span class="menu-button-content">
+            <span class="menu-button-text" data-i18n="menu.skills">Skills</span>
+        </span>
+      </button>
+
+      <button class="menu-button" data-section="contact" aria-selected="false">
+        <span class="menu-button-content">
+            <span class="menu-button-text" data-i18n="menu.contact">CV &amp; Contacts</span>
+        </span>
+      </button>
+    </nav>
+
+    <div class="divider"></div>
+
+    <section id="projects" class="content-section active" aria-hidden="false">
+      <div class="section-heading">
+         <h2 data-i18n="projects.title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div>
+            <p class="project-type">Brackeys Game Jam / 2026</p>
+            <h3>Can You Trust Me?</h3>
+            <p data-i18n="projects.can-you-trust-me.description">
+                Breve descrizione del progetto, del problema affrontato e della soluzione realizzata.
+            </p>
+          </div>
+          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-type">GMTK Game Jam / 2026</p>
+            <h3>Platform Panic.</h3>
+            <p data-i18n="projects.platform-panic.description">Una seconda descrizione. Puoi sostituire queste card con i tuoi veri progetti.</p>
+          </div>
+          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-type">Collab Jam / 2026</p>
+            <h3>A Way Out.</h3>
+            <p data-i18n="projects.a-way-out.description">Descrizione breve del progetto e delle tecnologie utilizzate.</p>
+          </div>
+          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section" aria-hidden="true">
+      <div class="section-heading">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-list">
+        <div class="skill-row">
+          <span>01</span>
+          <strong>Frontend</strong>
+          <p>HTML · CSS · JavaScript · React</p>
+        </div>
+        <div class="skill-row">
+          <span>02</span>
+          <strong>Backend</strong>
+          <p>Node.js · Python · REST APIs</p>
+        </div>
+        <div class="skill-row">
+          <span>03</span>
+          <strong>Design</strong>
+          <p>UI/UX · Figma · Prototyping</p>
+        </div>
+        <div class="skill-row">
+          <span>04</span>
+          <strong>Tools</strong>
+          <p>Git · GitHub · VS Code · Docker</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section" aria-hidden="true">
+      <div class="section-heading">
+        <h2>CV &amp; Contacts</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <p class="contact-label">ABOUT</p>
+          <p class="contact-copy">
+            Inserisci qui una breve bio professionale. Puoi parlare del tuo percorso,
+            dei tuoi interessi e del tipo di opportunità che stai cercando.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:mirsaccani@gmail.com">mirsaccani@gmail.com ↗</a>
+          <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a> -->
+          <a href="https://github.com/mirsaccani" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://hinarii.itch.io/" target="_blank" rel="noopener">itch.io ↗</a>
+          <a href="cv.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Hinarii — Mirko Saccani</span>
+      <span>Based in Italy</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
