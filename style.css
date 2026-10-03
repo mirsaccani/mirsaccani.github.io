@@ -328,6 +328,10 @@ h2 {
   color: var(--muted);
 }
 
+.skill-row > span.skills-symbols {
+  font: normal 32px/1 "DM Sans", sans-serif;
+}
+
 .skill-row strong {
   font-size: 18px;
 }
