@@ -62,7 +62,7 @@
             <p data-i18n="projects.can-you-trust-me.description">Match your emotes with those of the villagers to boost their trust, but be careful: if you make a mistake, their trust might drop.
             </p>
           </div>
-          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+          <a href="#" class="text-link" data-project="can-you-trust-me" data-i18n="projects.view">View project.</a>
         </article>
 
         <article class="project-card">
@@ -72,7 +72,7 @@
             <h3>Platform Panic.</h3>
             <p data-i18n="projects.platform-panic.description">Una seconda descrizione. Puoi sostituire queste card con i tuoi veri progetti.</p>
           </div>
-          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+          <a href="#" class="text-link" data-project="platform-panic" data-i18n="projects.view">View project.</a>
         </article>
 
         <article class="project-card">
@@ -82,7 +82,7 @@
             <h3>A Way Out.</h3>
             <p data-i18n="projects.a-way-out.description">Descrizione breve del progetto e delle tecnologie utilizzate.</p>
           </div>
-          <a href="#" class="text-link" data-i18n="projects.view">View project.</a>
+          <a href="#" class="text-link" data-project="a-way-out" data-i18n="projects.view">View project.</a>
         </article>
       </div>
     </section>
@@ -140,12 +140,32 @@
       </div>
     </section>
 
+
+
     <footer>
       <span>Hinarii — Mirko Saccani</span>
       <span data-i18n="footer.location">Based in Italy</span>
     </footer>
   </main>
 
+  <!-- Project Modal -->
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+  <div class="project-modal-backdrop" data-close></div>
+
+  <div class="project-modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="project-modal-close" aria-label="Close" data-close>✕</button>
+
+    <div class="modal-video" id="modal-video"></div>
+
+    <div class="project-modal-body">
+      <p class="project-type" id="modal-type"></p>
+      <h3 id="modal-title"></h3>
+      <p class="modal-description" id="modal-description"></p>
+      <a id="modal-link" class="text-link" href="#" target="_blank" rel="noopener" data-i18n="modal.open">Open on itch.io</a>
+    </div>
+  </div>
+</div>
+  <!-- Script Js -->
   <script src="script.js"></script>
 </body>
 </html>
