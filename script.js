@@ -47,6 +47,10 @@ const translations = {
     "language.skills.description": "Inglese (avanzato) — Francese (intermedio)",
     "soft-skills.description": "Ascolto attivo — Capacità d'adattamento — Visione d'insieme — Lavoro di gruppo",
 
+    "projects.can-you-trust-me.description": "Abbina le tue emotes a quelle degli abitanti del villaggio per aumentare la loro fiducia, ma fai attenzione: se commetti un errore, la loro fiducia potrebbe diminuire.",
+    "projects.platform-panic.description": "Assicurati che su ogni treno salgano abbastanza passeggeri prima della partenza. Se un treno parte con troppo pochi passeggeri, perderai profitti.",
+    "projects.a-way-out.description": "Supera ogni livello sbloccando le porte, interagendo con gli oggetti presenti nell'ambiente o evitando i nemici. Trova la via d'uscita prima che la tua torcia si spenga.",
+
     "contact.title": "CV & Contatti",
     "contact.about": "CHI SONO",
     "contact.cv": "Scarica CV",
@@ -76,6 +80,10 @@ const translations = {
     "language.skills.description": "English (advanced) — Italian (native) — French (intermediate)",
     "soft-skills.description": "Active Listening — Adaptability — Big-Picture View — Teamwork",
 
+    "projects.can-you-trust-me.description": "Match your emotes with those of the villagers to boost their trust, but be careful: if you make a mistake, their trust might drop.",
+    "projects.platform-panic.description": "Make sure enough passengers board each train before it departs. If a train leaves with too few passengers, you'll lose profit.",
+    "projects.a-way-out.description": "Get through each level by unlocking doors, interacting with objects in the environment, or avoiding enemies. Find your way out before your flashlight runs out of battery.",
+
     "contact.title": "CV & Contacts",
     "contact.about": "ABOUT",
     "contact.cv": "Download CV",
@@ -104,6 +112,10 @@ const translations = {
 
     "language.skills.description": "Français (intermédiaire) — Italien (natif) — Anglais (avancé)",
     "soft-skills.description": "Écoute active — Capacité d'adaptation — Vision d'ensemble — Travail d'équipe",
+
+    "projects.can-you-trust-me.description": "Faites correspondre vos émoticônes à celles des villageois pour gagner leur confiance, mais attention : si vous faites des erreurs, leur confiance risque de diminuer.",
+    "projects.platform-panic.description": "Assurez-vous qu'un nombre suffisant de passagers monte à bord de chaque train avant son départ. Si un train part avec trop peu de passagers, vous perdrez de l'argent.",
+    "projects.a-way-out.description": "Passez chaque niveau en ouvertant des portes, en interagissant avec les objets présents dans l'environnement ou en évitant les ennemis. Trouve la sortie avant que ta lampe de poche ne tombe en panne.",
 
     "contact.title": "CV & Contacts",
     "contact.about": "À PROPOS",

@@ -281,6 +281,13 @@ h2 {
   transform: translateY(-4px);
 }
 
+.project-cover {
+  width: calc(100% + 48px);
+  height: auto;
+  margin: -24px -24px 24px;
+  display: block;
+}
+
 .project-type {
   color: var(--muted);
   margin: 0 0 55px;
