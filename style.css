@@ -259,6 +259,10 @@ h2 {
   letter-spacing: -.04em;
 }
 
+p {
+  white-space: pre-line;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
