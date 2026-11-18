@@ -65,7 +65,6 @@ const translations = {
     "contact.cv": "Scarica CV",
 
     "contact.about.description": "Sono un programmatore di videogiochi e mi occupo del gameplay e dell'UI. Ho inoltre una buona conoscenza della narrazione e della grafica vettoriale, oltre a competenze di base in modellazione 3D e rigging. Queste conoscenze mi permettono di comprendere meglio gli aspetti creativi dello sviluppo videoludico e di collaborare efficacemente in team.",
-
     "footer.location": "In Italia"
   },
 
@@ -107,7 +106,6 @@ const translations = {
     "contact.cv": "Download CV",
 
     "contact.about.description": "I am an Italian video game programmer who focuses on gameplay and UI. I also have a good understanding of storytelling and vector graphics, as well as a basic knowledge of 3D modeling and rigging, which allows me to better understand the creative aspects of video game development and collaborate effectively as part of a team.",
-
     "footer.location": "Based in Italy"
   },
 
@@ -149,7 +147,7 @@ const translations = {
     "contact.cv": "Télécharger le CV",
 
     "contact.about.description": "Je suis développeur de jeux vidéo et je m'occupe du gameplay et de l'UI. Je possède une bonne connaisssance de la narration et du graphisme vectoriel, et des bases en modélisation 3D et en rigging, ce qui me permet de mieux comprendre les aspects créatifs du développement de jeux vidéo et de collaborer efficacement en équipe.",
-
+    "footer.location": "Basé en Italie"
   }
 };
 
