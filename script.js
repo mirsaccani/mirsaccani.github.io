@@ -64,7 +64,7 @@ const translations = {
     "contact.about": "CHI SONO",
     "contact.cv": "Scarica CV",
 
-    "contact.about.description": "Sono un programmatore di videogiochi e mi occupo del gameplay e dell'UI. Pur non essendo specializzato in storytelling e in arti visive, ho una buona comprensione di narrazione, grafica vettoriale, modellazione 3D e rigging, che mi permette di lavorare efficacemente in un team.",
+    "contact.about.description": "Sono un programmatore di videogiochi e mi occupo del gameplay e dell'UI. Ho inoltre una buona conoscenza della narrazione e della grafica vettoriale, oltre a competenze di base in modellazione 3D e rigging. Queste conoscenze mi permettono di comprendere meglio gli aspetti creativi dello sviluppo videoludico e di collaborare efficacemente in team.",
 
     "footer.location": "In Italia"
   },
@@ -106,7 +106,7 @@ const translations = {
     "contact.about": "ABOUT",
     "contact.cv": "Download CV",
 
-    "contact.about.description": "I am an Italian video game programmer who focuses on gameplay and UI. Even if I'm not specialized in storytelling or visual arts, I have a good understanding of narrative techniques, vector graphics, 3D modeling, and rigging, which allows me to work effectively in a team.",
+    "contact.about.description": "I am an Italian video game programmer who focuses on gameplay and UI. I also have a good understanding of storytelling and vector graphics, as well as a basic knowledge of 3D modeling and rigging, which allows me to better understand the creative aspects of video game development and collaborate effectively as part of a team.",
 
     "footer.location": "Based in Italy"
   },
@@ -148,9 +148,8 @@ const translations = {
     "contact.about": "À PROPOS",
     "contact.cv": "Télécharger le CV",
 
-    "contact.about.description": "Je suis un programmeur de jeux vidéo italien et je m'occupe du gameplay et de l'UI. Même si je ne suis pas spécialisé dans le storytelling et les arts visuels, j'ai une bonne maîtrise en narration, graphisme vectoriel, modélisation 3D et rigging, ce qui me permet de bien collaborer en équipe.",
+    "contact.about.description": "Je suis développeur de jeux vidéo et je m'occupe du gameplay et de l'UI. Je possède une bonne connaisssance de la narration et du graphisme vectoriel, et des bases en modélisation 3D et en rigging, ce qui me permet de mieux comprendre les aspects créatifs du développement de jeux vidéo et de collaborer efficacement en équipe.",
 
-    "footer.location": "Basé en Italie"
   }
 };
 
