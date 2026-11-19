@@ -231,6 +231,26 @@ h1 {
     animation: sectionIn .35s ease forwards;
 }
 
+#projects.active,
+#skills.active {
+    margin-bottom: 60px;
+}
+
+/* ABOUT sempre visibile */
+#contact {
+    display: block;
+    opacity: 1;
+    animation: none;
+}
+
+#contact .section-heading {
+    display: none;
+}
+
+#contact.show-heading .section-heading {
+    display: block;
+}
+
 @keyframes sectionIn {
   from {
     opacity: 0;

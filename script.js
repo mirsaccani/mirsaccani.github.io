@@ -2,19 +2,27 @@ const buttons = document.querySelectorAll(".menu-button");
 const sections = document.querySelectorAll(".content-section");
 
 function showSection(sectionId) {
-  buttons.forEach((button) => {
-    const isActive = button.dataset.section === sectionId;
+    buttons.forEach((button) => {
+        const isActive = button.dataset.section === sectionId;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-selected", String(isActive));
+    });
 
-    button.classList.toggle("active", isActive);
-    button.setAttribute("aria-selected", String(isActive));
-  });
+    sections.forEach((section) => {
+        if (section.id === "contact") {
+            section.classList.add("active");
+            section.setAttribute("aria-hidden", "false");
 
-  sections.forEach((section) => {
-    const isActive = section.id === sectionId;
+            // Mostra il titolo solo quando viene selezionato CV & Contacts
+            section.classList.toggle("show-heading", sectionId === "contact");
 
-    section.classList.toggle("active", isActive);
-    section.setAttribute("aria-hidden", String(!isActive));
-  });
+            return;
+        }
+
+        const isActive = section.id === sectionId;
+        section.classList.toggle("active", isActive);
+        section.setAttribute("aria-hidden", String(!isActive));
+    });
 }
 
 buttons.forEach((button) => {
@@ -22,7 +30,6 @@ buttons.forEach((button) => {
     showSection(button.dataset.section);
   });
 });
-
 
 /* LANGUAGE */
 
@@ -207,7 +214,7 @@ const projects = {
       en: "One month: one week for the game jam and two weeks to polish and add features.",
       fr: "Un mois : une semaine pour le game jam et deux semaines pour améliorer et ajouter des fonctionnalités."
     },
-    tools: "Unity2D 6.5, GitHub.",
+    tools: "Unity2D 6.5, GitHub, Affinity Designer.",
     programminglang: "C#.",
     tasks: {
       it: [
@@ -365,38 +372,39 @@ function openProject(id) {
 
   
 
-    // tabella informazioni
-  const lang = document.documentElement.lang;
+// Tabella informazioni
+const lang = document.documentElement.lang;
 
-  modal.querySelectorAll(".info-row").forEach((row) => {
-  const value = project[row.dataset.info];
-  const content = typeof value === "string" ? value : value?.[lang];
+modal.querySelectorAll(".info-row").forEach((row) => {
+    const value = project[row.dataset.info];
+    const content = typeof value === "string" ? value : value?.[lang];
 
-  row.hidden = !content;
-  if (row.hidden) return;
+    const contentBox = row.querySelector(".info-content");
 
-  const paragraph = row.querySelector("p");
+    // Svuota il contenuto precedente senza modificare la struttura HTML
+    contentBox.replaceChildren();
 
-  if (row.dataset.info === "tasks" && Array.isArray(content)) {
-    const list = document.createElement("ul");
+    row.hidden = !content || (Array.isArray(content) && content.length === 0);
 
-    content.forEach(task => {
-      const li = document.createElement("li");
-      li.textContent = task;
-      list.appendChild(li);
-    });
+    if (row.hidden) return;
 
-    paragraph.replaceWith(list);
-  } else {
-    const list = row.querySelector("ul");
+    // Se il contenuto è un array, crea una lista
+    if (Array.isArray(content)) {
+        const list = document.createElement("ul");
 
-    if (list) {
-      list.replaceWith(paragraph);
+        content.forEach((task) => {
+            const li = document.createElement("li");
+            li.textContent = task;
+            list.appendChild(li);
+        });
+
+        contentBox.appendChild(list);
+    } else {
+        // Altrimenti inserisce il testo
+        contentBox.textContent = content;
     }
-
-    paragraph.textContent = content;
-  }
 });
+
 
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
