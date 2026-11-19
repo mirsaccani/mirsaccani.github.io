@@ -105,7 +105,7 @@ const translations = {
     "contact.about": "ABOUT",
     "contact.cv": "Download CV",
 
-    "contact.about.description": "I am an Italian video game programmer who focuses on gameplay and UI. I also have a good understanding of storytelling and vector graphics, as well as a basic knowledge of 3D modeling and rigging, which allows me to better understand the creative aspects of video game development and collaborate effectively as part of a team.",
+    "contact.about.description": "I am an Italian video game programmer who focuses on gameplay and UI. I also have a good understanding of storytelling and vector graphics, as well as a basic knowledge of 3D modeling and rigging. These competencies allow me to better understand the creative aspects of video game development and collaborate effectively as part of a team.",
     "footer.location": "Based in Italy"
   },
 
@@ -146,7 +146,7 @@ const translations = {
     "contact.about": "À PROPOS",
     "contact.cv": "Télécharger le CV",
 
-    "contact.about.description": "Je suis développeur de jeux vidéo et je m'occupe du gameplay et de l'UI. Je possède une bonne connaisssance de la narration et du graphisme vectoriel, et des bases en modélisation 3D et en rigging, ce qui me permet de mieux comprendre les aspects créatifs du développement de jeux vidéo et de collaborer efficacement en équipe.",
+    "contact.about.description": "Je suis développeur de jeux vidéo et je m'occupe du gameplay et de l'UI. Je possède une bonne connaisssance de la narration et du graphisme vectoriel, et des bases en modélisation 3D et en rigging. Ces connaissances me permettent de mieux comprendre les aspects créatifs du développement de jeux vidéo et de collaborer efficacement en équipe.",
     "footer.location": "Basé en Italie"
   }
 };
@@ -210,9 +210,24 @@ const projects = {
     tools: "Unity2D 6.5, GitHub.",
     programminglang: "C#.",
     tasks: {
-      it: "Menu principale, menu di pausa, impostazioni, selezione casuale delle emote e sistema di abbinamento delle emote con punti fiducia, rifiniture e correzioni di bug.",
-      en: "Main menu, pause menu, settings, emotes randomizer and emote’s matching system with trust points, polish and debugs.",
-      fr: "Menu principal, menu de pause, paramètres, choix automatique des émoticônes et système pour associer des émoticônes avec des points de confiance, améliorations et corrections de bugs."
+      it: [
+        "Getione delle scene: menu principale, menu di pausa e impostazioni.",
+        "Gameplay: selezione casuale delle emote e sistema di abbinamento delle emote con punti fiducia.",
+        "Grafica 2D: creazione delle grafiche dell'UI e delle emotes in vettoriale.",
+        "Miglioramenti e correzione dei bug successivi al jam.",
+      ],
+      en: [
+        "Scene management: main menu, pause menu, and settings.",
+        "Gameplay: emotes randomizer, and emote’s matching system with trust points.",
+        "2D graphic: creation of UI graphics and emotes in vector graphics.",
+        "Post-jam polishing and bug fixing.",
+        ],
+      fr: [
+        "Gestion des scènes : menu principal, menu de pause, et paramètres.",
+        "Gameplay : choix automatique des émoticônes, et système pour associer des émoticônes avec des points de confiance.",
+        "Graphisme 2D : création de graphismes d'UI et des émoticônes au format vectoriel.",
+        "Améliorations et corrections de bugs après la jam."
+      ]
     },
     workflow: {
       it: "Durante la game jam, ho creato le meccaniche di base con il sistema di match delle emote, il movimento casuale degli NPC (assistito dall’IA) e le impostazioni essenziali; dopodiché mi sono preso una settimana di pausa. Successivamente ho aggiunto gli effetti sonori, migliorato il sistema di abbinamento, aggiunto le modalità di difficoltà e perfezionato il gioco sulla base dei feedback ricevuti.",
@@ -244,9 +259,21 @@ const projects = {
     tools: "Unity3D 6.3 LTS, GitHub, Google Docs.",
     programminglang: "C#.",
     tasks: {
-      it: "Passaggio tra animazioni e movimenti in generale (treni e NPC); gestione del tempo (orari dei treni e scorrere delle ore/minuti); transizione tra scene (menu principale, impostazioni e scena di gioco); aggiunta del menu di pausa e della schermata \"Game Over\"; debug e rifinitura.",
-      en: "Switching between animations and general movements (trains and NPCs); time management (train schedules and passage of hours/minutes); scene transitions (main menu, settings, and game scenes); adding the pause menu and the \"Game Over\" screen; debugging and polishing.",
-      fr: "Transitions entre les animations et les mouvements en général (trains et NPC); gestion du temps (horaires des trains et passage des heures/minutes); transitions entre les scènes (menu principal, paramètres et scène de jeu); ajouter le menu de pause et l'écran « Game Over »; corriger les bugs et améliorer le jeu."
+      it: [
+      "Getione delle scene: transizione tra scene (menu principale, impostazioni e scena di gioco), aggiunta del menu di pausa e della schermata \"Game Over\".",
+      "Gameplay: passaggio tra animazioni e movimenti in generale (treni e NPC) e gestione del tempo (orari dei treni e scorrere delle ore/minuti).",
+      "Miglioramenti e correzione dei bug successivi al jam."
+      ],
+      en: [
+      "Scene management: scene transitions (main menu, settings, and game scenes), and creation of both the pause menu and the \"Game Over\" screen.",
+      "Gameplay: switching between animations and general movements (trains and NPCs), and time management (train schedules and passage of hours/minutes).",
+      "Post-jam polishing and bug fixing."
+      ],
+      fr: [
+      "Gestion des scènes : transitions entre les scènes (menu principal, paramètres et scène de jeu), ajouter le menu de pause et l'écran « Game Over ».",
+      "Gameplay : transitions entre les animations et les mouvements en général (trains et NPC) et gestion du temps (horaires des trains et passage des heures/minutes).",
+      "Améliorations et corrections de bugs après la jam."
+      ]
     },
     workflow: {
       it: "A differenza dei precedenti lavori di gruppo (A Way Out), questa volta avevamo deciso di stabilire ruoli e compiti specifici. Per prima cosa, ho creato una lista delle cose da fare con tutto ciò che era necessario per il gioco. Poi, ogni giorno comunicavamo i nostri progressi e i cambiamenti nei task che stavamo svolgendo sul nostro server Discord: in questo modo, potevamo stabilire le nostre priorità di volta in volta. Dopo la pubblicazione del gioco, mi sono occupato di correggere i bug rimanenti, rifinire l'esperienza di gioco complessiva e migliorare l'aspetto visivo sulla base del feedback che abbiamo ricevuto durante la sessione di votazione della game jam.",
@@ -275,12 +302,27 @@ const projects = {
       en: "Three weeks: two weeks for the game jam and one week to polish.",
       fr: "Trois semaines : deux semaines pour le game jam et une semaine pour peaufiner le jeu."
     },
-    tools: "Unity3D 6.4, GitHub.",
+    tools: "Unity3D 6.4, GitHub, Affinity Designer.",
     programminglang: "C#.",
     tasks: {
-      it: "Transizione tra scene (menu principale, schermata di caricamento,tutorial e livelli), stazioni di ricarica, sistema di batteria (collegato al game over) e perfezionamenti (miglioramento delle collisioni tra la torcia e l’ambiente e regolazione della posizione della telecamera del giocatore).",
-      en: "Scene transitions (between the main menu, loading scene, tutorial, and levels), charging stations, battery system (linked to game over), and refinements (improved collision between the flashlight and the environment, and adjusted the player's camera position).",
-      fr: "Transitions entre les scènes (menu principal, écran de chargement, tutoriel et niveaux), stations de recharge, système de batterie (lien avec le game over) et améliorations (correction de la collision entre la torche et l’environnement et modification de la position de la caméra du joueur)."
+      it: [
+      "Getione delle scene: ransizione tra scene (menu principale, schermata di caricamento, tutorial e livelli).",
+      "Gameplay: stazioni di ricarica, sistema di batteria (collegato al game over)",
+      "Grafica 2D: creazione delle grafiche dell'UI in vettoriale.",
+      "Post-jam: miglioramento delle collisioni tra la torcia e l’ambiente e regolazione della posizione della telecamera del giocatore."
+      ],
+      en: [
+      "Scene management: scene transitions (between the main menu, loading scene, tutorial, and levels).",
+      "Gameplay: charging stations, battery system (linked to game over).",
+      "2D graphic: creation of UI graphics in vector graphics.",
+      "Post-jam: improved collision between the flashlight and the environment, and adjusted the player's camera position."
+      ],
+      fr: [
+      "Gestion des scènes : transitions entre les scènes (menu principal, écran de chargement, tutoriel et niveaux).",
+      "Gameplay : stations de recharge, système de batterie (lien avec le game over).",
+      "Graphisme 2D : création de graphismes d'UI au format vectoriel.",
+      "Après la jam : correction de la collision entre la torche et l’environnement et modification de la position de la caméra du joueur."
+      ]
     },
     workflow: {
       it: "Dopo una breve sessione di brainstorming, abbiamo iniziato a creare più livelli possibili, in modo da poi scegliere i migliori. Il nostro approccio era che tutti potessero occuparsi di tutto, ma non si è rivelato ideale perché ha portato a malintesi e confusione. \nA metà della game jam, uno dei nostri programmatori ha lasciato il gruppo, quindi abbiamo deciso di cambiare strategia perché eravamo un po’ in ritardo rispetto al piano previsto. Abbiamo smesso di creare nuovi livelli e abbiamo migliorato quelli che erano quasi finiti, tralasciando il resto. \nIn questo modo, abbiamo avuto il tempo di finire il gioco e anche di testarlo un po’ prima di pubblicarlo su itch.io. Dopodiché, abbiamo letto tutti i commenti e risolto i problemi principali sulla base dei vari feedback ricevuti.",
@@ -327,14 +369,34 @@ function openProject(id) {
   const lang = document.documentElement.lang;
 
   modal.querySelectorAll(".info-row").forEach((row) => {
-    const value = project[row.dataset.info];
+  const value = project[row.dataset.info];
+  const content = typeof value === "string" ? value : value?.[lang];
 
-    row.hidden = !value || (typeof value === "object" && !value[lang]);
-    if (row.hidden) return;
+  row.hidden = !content;
+  if (row.hidden) return;
 
-    row.querySelector("p").textContent =
-      typeof value === "string" ? value : value[lang];
-  });
+  const paragraph = row.querySelector("p");
+
+  if (row.dataset.info === "tasks" && Array.isArray(content)) {
+    const list = document.createElement("ul");
+
+    content.forEach(task => {
+      const li = document.createElement("li");
+      li.textContent = task;
+      list.appendChild(li);
+    });
+
+    paragraph.replaceWith(list);
+  } else {
+    const list = row.querySelector("ul");
+
+    if (list) {
+      list.replaceWith(paragraph);
+    }
+
+    paragraph.textContent = content;
+  }
+});
 
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");

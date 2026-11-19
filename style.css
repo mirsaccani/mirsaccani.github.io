@@ -644,6 +644,25 @@ footer {
     margin: 0 0 24px;
 }
 
+.info-row p,
+.info-row .info-content {
+    margin: 1em 0;
+}
+
+.info-row ul {
+    margin: 1em 0;
+    padding-left: 20px;
+}
+
+.info-row li {
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+.info-row li:last-child {
+    margin-bottom: 0;
+}
+
 /* FIXED FOOTER */
 
 .project-modal-footer {
